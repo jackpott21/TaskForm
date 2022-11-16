@@ -1,0 +1,31 @@
+<div class="card card-body text-white bg-dark border-primary card-striped p-4 mb-3" style="max-width: 18re">
+{{!-- card card-body p-4 rounded-0 bg-warning text-white- --}}
+  <h3>Add a Task</h3>
+  <form action="/tasks/add" method="POST">
+
+    <div>
+      <label for="title" class="border-primary"> Write a title:</label>
+      <input
+        type="text"
+        name="title"
+        id="title"
+        placeholder="Title"
+        class="form-control"
+      />
+    </div>
+
+    <div>
+      <label for="description"  >Description:</label>
+      <textarea
+        name="description"
+        placeholder="Description"
+        id="description"
+        class="form-control"
+      ></textarea>
+    </div>
+
+  <button class="btn btn-primary btn-sm mt-2">Add</button>
+
+
+  </form>
+</div>
